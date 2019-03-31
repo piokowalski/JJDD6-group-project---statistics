@@ -9,6 +9,10 @@ public class Statistics {
 
     public Integer bikeStations;
 
+    public void stats(Integer bikeStations, String country) {
+        System.out.println("In " + country + " there is: " + bikeStations + " bike stations.");
+    }
+
 
 
 
