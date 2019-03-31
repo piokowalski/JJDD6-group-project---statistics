@@ -5,11 +5,13 @@ import bikes.app.statistics.Statistics;
 public class App {
     public static void main(String[] args) {
 
-        System.out.println("Rowerek");
+        System.out.println("Bikes app");
 
         Statistics statistics = new Statistics();
-        statistics.stats(240,"Germany");
 
+        statistics.cityStats(29,"Berlin");
+
+        statistics.countryStats(320,"Germany");
 
 
 
