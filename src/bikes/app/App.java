@@ -9,12 +9,12 @@ public class App {
 
         Statistics statistics = new Statistics();
 
-        statistics.cityStats(1,"Gdansk");
+        statistics.cityStats(15,"Gdansk");
 
-        statistics.countryStats(320,"Germany");
+        statistics.countryStats(69,"Poland");
 
         System.out.println(" -------- __@      __@       __@       __@     __~@\n" +
-                " ----- _`\\<,_    _`\\<,_    _`\\<,_     _`\\<,_    _`\\<,_\n" +
+                " ----- _`\\<,_    _`\\<,_    _`\\<,_     _`\\<,_   _`\\<,_\n" +
                 " ---- (*)/ (*)  (*)/ (*)  (*)/ (*)  (*)/ (*)  (*)/ (*)\n");
     }
 }
