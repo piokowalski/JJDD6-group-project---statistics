@@ -9,12 +9,8 @@ public class App {
 
         Statistics statistics = new Statistics();
 
-        statistics.cityStats(29,"Berlin");
+        statistics.cityStats(1,"Gdansk");
 
         statistics.countryStats(320,"Germany");
-
-
-
-
     }
 }
