@@ -1,20 +1,19 @@
-package bikes.app.statistics;
+package com.infoshareacademy.jjdd6.errorzy;
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Statistics {
-    //statistics of count of bike stations in specific country
-    //and cities
+    private static final Logger LOGGER = LogManager.getLogger(Statistics.class.getName());
 
-    //methods should take informations from xml file
-    //countries should be categorized with cities
-
-
-    public void countryStats(Integer bikeStations, String country) {
-        System.out.println("In " + country + " there is: " + bikeStations + " bike stations.");
+    public void countryStats(Country country) {
+        LOGGER.info("Statistics for country: " + country.getName() + " created.");
+        System.out.println("There is: " + country.getCityList().size() + " bike stations in "+ country.getCountryName());
     }
 
-    public void cityStats(Integer bikeStations, String city) {
-        System.out.println("In " + city + " there is: " + bikeStations + " bike stations.");
+    public void cityStats(City city) {
+        LOGGER.info("Statistics for city: " + city.getName() + " created.");
+        System.out.println("There is: " + city.getPlaceList().size() + " bike stations in "+ city.getName());
     }
-
-
 }
